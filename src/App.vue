@@ -1,13 +1,18 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <BaseHeader />
+  </div>
 </template>
 
 <script>
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
+import BaseHeader from "./components/BaseHeader.vue";
 export default {
   name: "App",
-  components: {},
+  components: {
+    BaseHeader,
+  },
 };
 </script>
 
