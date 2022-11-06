@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Mishima Dev</a>
         <button
@@ -42,8 +42,13 @@ export default {
 header {
   font-family: "Kolker Brush", cursive;
   font-size: 3rem;
+  background-color: var(--dark);
   .navbar-brand {
     font-size: 3.5rem;
+  }
+  .navbar-custom a,
+  .active a {
+    color: white;
   }
 }
 </style>
