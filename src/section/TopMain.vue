@@ -2,23 +2,23 @@
   <div>
     <section>
       <div class="bg"></div>
-      <h1>Simple parallax sections</h1>
+      <h1>Forse</h1>
     </section>
     <section>
       <div class="bg"></div>
-      <h1>Hey look, a title</h1>
+      <h1>non ti serve veramente</h1>
     </section>
     <section>
       <div class="bg"></div>
-      <h1>They just keep coming</h1>
+      <h1>un sito web customizzato...</h1>
     </section>
     <section>
       <div class="bg"></div>
-      <h1>So smooth though</h1>
+      <h1>Ma un sito web customizzato</h1>
     </section>
     <section>
       <div class="bg"></div>
-      <h1>Nice, right?</h1>
+      <h1>è figo, vero?</h1>
     </section>
   </div>
 </template>
