@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#">Chi Siamo</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Features</a>
@@ -38,17 +38,18 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header {
   font-family: "Kolker Brush", cursive;
-  font-size: 3rem;
-  background-color: var(--dark);
+  font-size: 3.2rem;
+  background-image: url("../assets/img/head.jpg");
+  background-position: center;
+  background-size: cover;
   .navbar-brand {
     font-size: 3.5rem;
   }
-  .navbar-custom a,
-  .active a {
-    color: white;
+  .navbar-custom a {
+    color: var(--red);
   }
 }
 </style>
