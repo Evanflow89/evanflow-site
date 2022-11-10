@@ -1,24 +1,24 @@
 <template>
   <div>
     <section>
-      <div class="bg"></div>
+      <div class="bg one"></div>
       <h1>Forse</h1>
     </section>
     <section>
-      <div class="bg"></div>
-      <h1>non ti serve veramente</h1>
+      <div class="bg two"></div>
+      <h1>un sito personalizzato</h1>
     </section>
     <section>
-      <div class="bg"></div>
-      <h1>un sito web customizzato...</h1>
+      <div class="bg three"></div>
+      <h1>non ti serve veramente...</h1>
     </section>
     <section>
-      <div class="bg"></div>
-      <h1>Ma un sito web customizzato</h1>
+      <div class="bg four"></div>
+      <h1>Ma un sito web personalizzato</h1>
     </section>
     <section>
-      <div class="bg"></div>
-      <h1>è figo, vero?</h1>
+      <div class="bg five"></div>
+      <h1>è bello, vero?</h1>
     </section>
   </div>
 </template>
@@ -39,7 +39,7 @@ export default {
       section.bg = section.querySelector(".bg");
 
       // Give the backgrounds some random images
-      section.bg.style.backgroundImage = `url(https://picsum.photos/1600/800?random=${i})`;
+      // section.bg.style.backgroundImage = `url(https://picsum.photos/1600/800?random=${i})`;
 
       // the first image (i === 0) should be handled differently because it should start at the very top.
       // use function-based values in order to keep things responsive
@@ -74,6 +74,22 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .one {
+    background-image: url("../assets/img/sfondo1.jpg");
+  }
+  .two {
+    background-image: url("../assets/img/sfondo2.jpg");
+  }
+  .three {
+    background-image: url("../assets/img/sfondo3.jpg");
+  }
+  .four {
+    background-image: url("../assets/img/sfondo4.jpg");
+  }
+  .five {
+    background-image: url("../assets/img/sfondo5.jpg");
+  }
 }
 .bg {
   position: absolute;
@@ -88,6 +104,7 @@ section {
 }
 
 h1 {
+  text-align: center;
   color: white;
   text-shadow: 1px 1px 3px black;
   z-index: 1;
