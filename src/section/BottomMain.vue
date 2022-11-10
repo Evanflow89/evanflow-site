@@ -1,9 +1,14 @@
 <template>
   <section class="BottomMain">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="why">Testo</h2>
+    <div class="container pt-3">
+      <div class="row d-flex justify-content-center">
+        <div class="col-8 text-center why">
+          <h2>Ottieni Visibilità</h2>
+          <p class="pt-4">
+            Qualsiasi sia la tua attività, che si tratti di un bar, un
+            ristorante o un'azienda è importante avere una presenza ben marcata
+            sul web. Per questo un sito personale ti viene in aiuto!
+          </p>
         </div>
       </div>
     </div>
@@ -23,12 +28,12 @@ export default {
       scrollTrigger: {
         trigger: ".why",
         start: "top center",
-        end: "top 200px",
+        end: "top 100px",
         scrub: 1,
       },
-      y: 400,
+      y: 100,
       ease: "none",
-      duration: 2,
+      duration: 1,
     });
   },
 };

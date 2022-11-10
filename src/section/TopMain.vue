@@ -98,7 +98,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header {
   font-size: 1.8rem;
   .navbar-brand {
