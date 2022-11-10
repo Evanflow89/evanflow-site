@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Mishima Dev</a>
           <button
@@ -100,8 +100,6 @@ export default {
 
 <style lang="scss">
 header {
-  position: fixed;
-  width: 100%;
   font-size: 1.8rem;
   .navbar-brand {
     font-size: 1.8rem;
