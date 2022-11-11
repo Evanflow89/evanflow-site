@@ -24,17 +24,31 @@ export default {
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(".why", {
-      scrollTrigger: {
-        trigger: ".why",
-        start: "top 100px",
-        end: "top 100px",
-        scrub: 1,
-      },
-      y: 50,
-      ease: "none",
-      duration: 1,
-    });
+    if (window.innerWidth > 576) {
+      gsap.to(".why", {
+        scrollTrigger: {
+          trigger: ".why",
+          start: "top 100px",
+          end: "top 100px",
+          scrub: 1,
+        },
+        y: 200,
+        ease: "none",
+        duration: 1,
+      });
+    } else {
+      gsap.to(".why", {
+        scrollTrigger: {
+          trigger: ".why",
+          start: "top 100px",
+          end: "top 100px",
+          scrub: 1,
+        },
+        y: 40,
+        ease: "none",
+        duration: 1,
+      });
+    }
   },
 };
 </script>
