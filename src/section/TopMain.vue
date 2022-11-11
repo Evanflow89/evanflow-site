@@ -18,20 +18,25 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#sectionOne"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#Noi">Perchè Noi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#Contatti">Contattaci</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <section>
+    <section id="sectionOne">
       <div class="bg one"></div>
       <h1>Forse</h1>
     </section>
