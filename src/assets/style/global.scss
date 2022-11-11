@@ -1,2 +1,16 @@
 @import './global-parts/variables';
 @import './global-parts/typography';
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: .75rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}

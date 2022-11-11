@@ -1,12 +1,12 @@
 <template>
   <section class="BottomMain">
-    <div class="container pt-3">
+    <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-8 text-center why">
           <h2>Ottieni Visibilità</h2>
           <p class="pt-4">
             Qualsiasi sia la tua attività, che si tratti di un bar, un
-            ristorante o un'azienda è importante avere una presenza ben marcata
+            ristorante o un'azienda, è importante avere una presenza ben marcata
             sul web. Per questo un sito personale ti viene in aiuto!
           </p>
         </div>
@@ -27,11 +27,11 @@ export default {
     gsap.to(".why", {
       scrollTrigger: {
         trigger: ".why",
-        start: "top center",
+        start: "top 100px",
         end: "top 100px",
         scrub: 1,
       },
-      y: 100,
+      y: 50,
       ease: "none",
       duration: 1,
     });
@@ -44,5 +44,13 @@ export default {
   height: 100vh;
   background-color: black;
   color: white;
+  font-size: 2rem;
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  .why {
+    margin-top: 50px;
+  }
 }
 </style>
