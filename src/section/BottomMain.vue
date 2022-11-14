@@ -55,11 +55,13 @@ export default {
 
 <style lang="scss" scoped>
 .BottomMain {
+  font-family: "Playfair Display", serif;
   height: 100vh;
   background-color: black;
   color: white;
   font-size: 2rem;
   h2 {
+    font-family: "Playfair Display", serif;
     font-size: 2.4rem;
   }
 
