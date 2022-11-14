@@ -1,10 +1,10 @@
 <template>
   <section id="Noi">
-    <section class="BottomMain">
+    <section class="BottomMain2">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-8 text-center why">
-            <h2>Ottieni Visibilità</h2>
+          <div class="col-8 text-center why2">
+            <h2>Affidati ai professionisti</h2>
             <p class="pt-4">
               Qualsiasi sia la tua attività, che si tratti di un bar, un
               ristorante o un'azienda, è importante avere una presenza ben
@@ -14,27 +14,22 @@
         </div>
       </div>
     </section>
-    <BottomMain2 />
   </section>
 </template>
 
 <script>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import BottomMain2 from "../common/BottomMain2.vue";
 
 export default {
   name: "BottomMain",
-  components: {
-    BottomMain2,
-  },
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
 
     if (window.innerWidth > 576) {
-      gsap.to(".why", {
+      gsap.to(".why2", {
         scrollTrigger: {
-          trigger: ".why",
+          trigger: ".why2",
           start: "top 100px",
           end: "top 100px",
           scrub: 1,
@@ -44,9 +39,9 @@ export default {
         duration: 1,
       });
     } else {
-      gsap.to(".why", {
+      gsap.to(".why2", {
         scrollTrigger: {
-          trigger: ".why",
+          trigger: ".why2",
           start: "top 100px",
           end: "top 100px",
           scrub: 1,
@@ -61,10 +56,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.BottomMain {
+.BottomMain2 {
   font-family: "Playfair Display", serif;
   height: 100vh;
-  background-image: url("../assets/img/sfondoNoi.jpg");
+  background-image: url("../assets/img/sfondoNoi2.jpg");
   background-size: cover;
   color: white;
   font-size: 2rem;
