@@ -73,8 +73,8 @@ export default {
     font-size: 2.4rem;
   }
 
-  .why {
-    margin-top: 50px;
+  .why2 {
+    margin-top: 100px;
   }
 }
 </style>

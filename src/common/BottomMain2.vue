@@ -1,19 +1,17 @@
 <template>
-  <section id="Noi">
-    <section class="BottomMain2">
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-8 text-center why2">
-            <h2>Affidati ai professionisti</h2>
-            <p class="pt-4">
-              Qualsiasi sia la tua attività, che si tratti di un bar, un
-              ristorante o un'azienda, è importante avere una presenza ben
-              marcata sul web. Per questo un sito personale ti viene in aiuto!
-            </p>
-          </div>
+  <section class="BottomMain2">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-8 text-center why2">
+          <h2>Affidati ai professionisti</h2>
+          <p class="pt-4">
+            Non ti affideresti ad un tatuatore principiante sapendo che quel
+            tatuaggio resterà lì per molto tempo e sarà visibile a tutti! Per il
+            tuo sito vale lo stesso concetto<br />
+          </p>
         </div>
       </div>
-    </section>
+    </div>
   </section>
 </template>
 
@@ -59,7 +57,7 @@ export default {
 .BottomMain2 {
   font-family: "Playfair Display", serif;
   height: 100vh;
-  background-image: url("../assets/img/sfondoNoi2.jpg");
+  background-image: url("../assets/img/sfondoNoi23.jpg");
   background-size: cover;
   color: white;
   font-size: 2rem;
