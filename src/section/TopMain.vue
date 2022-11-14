@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="Home">
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container-fluid">
@@ -18,10 +18,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="#sectionOne"
+                <a class="nav-link active" aria-current="page" href="#Home"
                   >Home</a
                 >
               </li>
@@ -36,7 +33,7 @@
         </div>
       </nav>
     </header>
-    <section id="sectionOne">
+    <section>
       <div class="bg one"></div>
       <h1>Forse</h1>
     </section>
