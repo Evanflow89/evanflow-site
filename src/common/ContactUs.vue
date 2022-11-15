@@ -33,12 +33,12 @@ export default {
       gsap.to(".contact", {
         scrollTrigger: {
           trigger: ".contact",
-          start: "center center",
-          end: "top center",
+          start: "top 100px",
+          end: "top 100px",
           once: true,
-          scrub: 3,
+          scrub: 1,
         },
-        x: 60,
+        y: 40,
         ease: "none",
         duration: 1,
       });
@@ -46,12 +46,12 @@ export default {
       gsap.to(".contact", {
         scrollTrigger: {
           trigger: ".contact",
-          start: "center center",
-          end: "top center",
+          start: "top 100px",
+          end: "top 100px",
           once: true,
-          scrub: 3,
+          scrub: 1,
         },
-        x: 120,
+        y: 40,
         ease: "none",
         duration: 1,
       });
@@ -92,6 +92,11 @@ export default {
   }
   .fa-envelope:hover {
     color: var(--red);
+  }
+  @media screen and (max-width: 1000px) {
+    .row {
+      justify-content: center;
+    }
   }
 }
 </style>
