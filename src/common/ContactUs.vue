@@ -1,7 +1,7 @@
 <template>
   <section class="ContactUs d-flex align-items-center" id="Contatti">
     <div class="container contact">
-      <div class="row d-flex justify-content-center">
+      <div class="row">
         <div class="col-8 text-center">
           <h2>Contattaci</h2>
           <p class="pt-4">
@@ -22,8 +22,39 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   name: "ContactUs",
+  mounted() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    if (window.innerWidth > 576) {
+      gsap.to(".contact", {
+        scrollTrigger: {
+          trigger: ".contact",
+          start: "top center",
+          end: "top center",
+          scrub: 3,
+        },
+        x: 200,
+        ease: "none",
+        duration: 2,
+      });
+    } else {
+      gsap.to(".contact", {
+        scrollTrigger: {
+          trigger: ".contact",
+          start: "top center",
+          end: "top center",
+          scrub: 3,
+        },
+        x: 60,
+        ease: "none",
+        duration: 2,
+      });
+    }
+  },
 };
 </script>
 
