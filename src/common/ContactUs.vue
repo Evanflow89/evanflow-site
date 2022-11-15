@@ -29,7 +29,7 @@ export default {
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
 
-    if (window.innerWidth > 576) {
+    if (window.innerWidth < 576) {
       gsap.to(".contact", {
         scrollTrigger: {
           trigger: ".contact",
@@ -38,7 +38,20 @@ export default {
           once: true,
           scrub: 3,
         },
-        x: 200,
+        x: 60,
+        ease: "none",
+        duration: 1,
+      });
+    } else if (window.innerWidth < 1000) {
+      gsap.to(".contact", {
+        scrollTrigger: {
+          trigger: ".contact",
+          start: "center center",
+          end: "top center",
+          once: true,
+          scrub: 3,
+        },
+        x: 120,
         ease: "none",
         duration: 1,
       });
@@ -51,7 +64,7 @@ export default {
           once: true,
           scrub: 3,
         },
-        x: 60,
+        x: 200,
         ease: "none",
         duration: 1,
       });
