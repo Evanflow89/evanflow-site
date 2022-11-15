@@ -18,6 +18,14 @@
           <i class="fa-brands fa-instagram"></i>
         </div>
       </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <small
+            >Mishima Dev&#169; 2022. Copyright immagini
+            <a href="https://unsplash.com/">Unsplash.com</a></small
+          >
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -47,6 +55,13 @@ footer {
   .fa-brands:hover,
   .fa-solid:hover {
     color: var(--red);
+  }
+  small {
+    color: white;
+    font-family: "Playfair Display", serif;
+    a {
+      color: white;
+    }
   }
 }
 </style>
