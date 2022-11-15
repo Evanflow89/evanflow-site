@@ -7,7 +7,7 @@
           <p class="pt-4">
             Inviaci la tua idea di grafica o affidati a noi. Avrai a
             disposizione un'ampia gamma di font, immagini e colori per
-            customizzare completamente il tuo sito e renderlo il più personale
+            customizzare completamente il tuo sito e renderlo il più unico
             possibile.
           </p>
           <p class="text-center pt-2 mail">
@@ -29,29 +29,44 @@ export default {
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
 
-    if (window.innerWidth > 576) {
+    if (window.innerWidth < 576) {
       gsap.to(".contact", {
         scrollTrigger: {
           trigger: ".contact",
-          start: "top center",
+          start: "center center",
           end: "top center",
+          once: true,
           scrub: 3,
         },
-        x: 200,
+        x: 60,
         ease: "none",
-        duration: 2,
+        duration: 1,
+      });
+    } else if (window.innerWidth < 1000) {
+      gsap.to(".contact", {
+        scrollTrigger: {
+          trigger: ".contact",
+          start: "center center",
+          end: "top center",
+          once: true,
+          scrub: 3,
+        },
+        x: 120,
+        ease: "none",
+        duration: 1,
       });
     } else {
       gsap.to(".contact", {
         scrollTrigger: {
           trigger: ".contact",
-          start: "top center",
+          start: "center center",
           end: "top center",
+          once: true,
           scrub: 3,
         },
-        x: 60,
+        x: 200,
         ease: "none",
-        duration: 2,
+        duration: 1,
       });
     }
   },
@@ -62,7 +77,8 @@ export default {
 .ContactUs {
   font-family: "Playfair Display", serif;
   height: 100vh;
-  background-color: black;
+  background-image: url("../assets/img/contactback.jpg");
+  background-size: cover;
   color: white;
   font-size: 2rem;
   h2 {
@@ -73,6 +89,9 @@ export default {
     display: flex;
     justify-content: center;
     gap: 1.25rem;
+  }
+  .fa-envelope:hover {
+    color: var(--red);
   }
 }
 </style>
