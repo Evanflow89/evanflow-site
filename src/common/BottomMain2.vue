@@ -6,8 +6,8 @@
           <h2>Affidati ai professionisti</h2>
           <p class="pt-4">
             Non ti affideresti ad un tatuatore principiante sapendo che quel
-            tatuaggio resterà lì per molto tempo e sarà visibile a tutti! Per il
-            tuo sito vale lo stesso concetto<br />
+            tatuaggio resterà lì per molto tempo e sarà visibile a tutti. Per il
+            tuo sito vale lo stesso concetto!<br />
           </p>
         </div>
       </div>
