@@ -102,7 +102,8 @@ header {
   font-family: "Playfair Display", serif;
   font-size: 1.8rem;
   .navbar-brand {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
+    font-family: "Megrim", cursive;
   }
 }
 section {
