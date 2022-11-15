@@ -77,7 +77,8 @@ export default {
 .ContactUs {
   font-family: "Playfair Display", serif;
   height: 100vh;
-  background-color: black;
+  background-image: url("../assets/img/contactback.jpg");
+  background-size: cover;
   color: white;
   font-size: 2rem;
   h2 {
@@ -88,6 +89,9 @@ export default {
     display: flex;
     justify-content: center;
     gap: 1.25rem;
+  }
+  .fa-envelope:hover {
+    color: var(--red);
   }
 }
 </style>
