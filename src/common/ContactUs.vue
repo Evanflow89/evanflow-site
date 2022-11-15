@@ -7,7 +7,7 @@
           <p class="pt-4">
             Inviaci la tua idea di grafica o affidati a noi. Avrai a
             disposizione un'ampia gamma di font, immagini e colori per
-            customizzare completamente il tuo sito e renderlo il più personale
+            customizzare completamente il tuo sito e renderlo il più unico
             possibile.
           </p>
           <p class="text-center pt-2 mail">
@@ -33,25 +33,27 @@ export default {
       gsap.to(".contact", {
         scrollTrigger: {
           trigger: ".contact",
-          start: "top center",
+          start: "center center",
           end: "top center",
+          once: true,
           scrub: 3,
         },
         x: 200,
         ease: "none",
-        duration: 2,
+        duration: 1,
       });
     } else {
       gsap.to(".contact", {
         scrollTrigger: {
           trigger: ".contact",
-          start: "top center",
+          start: "center center",
           end: "top center",
+          once: true,
           scrub: 3,
         },
         x: 60,
         ease: "none",
-        duration: 2,
+        duration: 1,
       });
     }
   },
