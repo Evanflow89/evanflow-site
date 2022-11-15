@@ -15,6 +15,7 @@
       </div>
     </section>
     <BottomMain2 />
+    <ContactUs />
   </section>
 </template>
 
@@ -22,11 +23,13 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BottomMain2 from "../common/BottomMain2.vue";
+import ContactUs from "../common/ContactUs.vue";
 
 export default {
   name: "BottomMain",
   components: {
     BottomMain2,
+    ContactUs,
   },
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
