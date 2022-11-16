@@ -1,7 +1,7 @@
 <template>
   <section id="Noi">
-    <section class="BottomMain d-flex align-items-center">
-      <div class="container">
+    <section class="BottomMain">
+      <div class="container d-flex align-items-center">
         <div class="row d-flex justify-content-center">
           <div class="col-8 text-center why">
             <h2 class="title">
@@ -63,11 +63,18 @@ export default {
   background-size: cover;
   color: white;
   font-size: 2rem;
+
+  .container {
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    height: 100%;
+    width: 100%;
+  }
   h2 {
     font-family: "Playfair Display", serif;
     font-size: 2.4rem;
     background-color: inherit;
     overflow: hidden;
+    text-transform: uppercase;
   }
 
   h2 span {

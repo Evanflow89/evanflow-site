@@ -1,6 +1,6 @@
 <template>
-  <section class="ContactUs d-flex align-items-center" id="Contatti">
-    <div class="container contact">
+  <section class="ContactUs" id="Contatti">
+    <div class="container contact d-flex align-items-center">
       <div class="row d-flex justify-content-center">
         <div class="col-8 text-center">
           <h2 class="title3">
@@ -62,6 +62,13 @@ export default {
     font-size: 2.4rem;
     background-color: inherit;
     overflow: hidden;
+    text-transform: uppercase;
+  }
+
+  .container {
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    height: 100%;
+    width: 100%;
   }
 
   h2 span {
