@@ -33,9 +33,5 @@ export default {
     font-family: "Playfair Display", serif;
     font-size: 2.4rem;
   }
-
-  .why {
-    margin-top: 50px;
-  }
 }
 </style>
