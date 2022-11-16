@@ -1,5 +1,5 @@
 <template>
-  <section class="BottomMain2">
+  <section class="BottomMain2 d-flex align-items-center">
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-8 text-center why2">
@@ -16,42 +16,8 @@
 </template>
 
 <script>
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 export default {
   name: "BottomMain",
-  mounted() {
-    gsap.registerPlugin(ScrollTrigger);
-
-    if (window.innerWidth > 576) {
-      gsap.to(".why2", {
-        scrollTrigger: {
-          trigger: ".why2",
-          start: "top 100px",
-          end: "top 100px",
-          once: true,
-          scrub: 1,
-        },
-        y: 200,
-        ease: "none",
-        duration: 1,
-      });
-    } else {
-      gsap.to(".why2", {
-        scrollTrigger: {
-          trigger: ".why2",
-          start: "top 100px",
-          end: "top 100px",
-          once: true,
-          scrub: 1,
-        },
-        y: 40,
-        ease: "none",
-        duration: 1,
-      });
-    }
-  },
 };
 </script>
 
