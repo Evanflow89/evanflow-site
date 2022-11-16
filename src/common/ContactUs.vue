@@ -3,7 +3,9 @@
     <div class="container contact">
       <div class="row d-flex justify-content-center">
         <div class="col-8 text-center">
-          <h2>Contattaci</h2>
+          <h2 class="title3">
+            <span id="create3">Contattaci</span>
+          </h2>
           <p class="pt-4">
             Inviaci la tua idea di grafica o affidati a noi. Avrai a
             disposizione un'ampia gamma di font, immagini e colori per
@@ -22,8 +24,27 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   name: "ContactUs",
+  mounted() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
+    tl.to("#create3", {
+      scrollTrigger: {
+        trigger: ".title3",
+        start: "top center",
+        end: "top center",
+        once: true,
+        scrub: 1,
+      },
+      y: "0%",
+      duration: 0.7,
+      stagger: 0.2,
+    });
+  },
 };
 </script>
 
@@ -38,6 +59,13 @@ export default {
   h2 {
     font-family: "Playfair Display", serif;
     font-size: 2.4rem;
+    background-color: inherit;
+    overflow: hidden;
+  }
+
+  h2 span {
+    display: inline-block;
+    transform: translateY(100%);
   }
   .mail {
     display: flex;
@@ -46,11 +74,6 @@ export default {
   }
   .fa-envelope:hover {
     color: var(--red);
-  }
-  @media screen and (max-width: 1000px) {
-    .row {
-      justify-content: center;
-    }
   }
 }
 </style>

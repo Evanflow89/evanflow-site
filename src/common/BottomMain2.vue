@@ -3,7 +3,9 @@
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-8 text-center why2">
-          <h2>Affidati ai professionisti</h2>
+          <h2 class="title2">
+            <span id="create">Affidati ai professionisti</span>
+          </h2>
           <p class="pt-4">
             Non ti affideresti ad un tatuatore principiante sapendo che quel
             tatuaggio resterà lì per molto tempo e sarà visibile a tutti. Per il
@@ -16,8 +18,26 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   name: "BottomMain",
+  mounted() {
+    gsap.registerPlugin(ScrollTrigger);
+    let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
+    tl.to("#create", {
+      scrollTrigger: {
+        trigger: ".title2",
+        start: "top center",
+        end: "top center",
+        once: true,
+        scrub: 1,
+      },
+      y: "0%",
+      duration: 0.7,
+      stagger: 0.2,
+    });
+  },
 };
 </script>
 
@@ -32,6 +52,13 @@ export default {
   h2 {
     font-family: "Playfair Display", serif;
     font-size: 2.4rem;
+    background-color: inherit;
+    overflow: hidden;
+  }
+
+  h2 span {
+    display: inline-block;
+    transform: translateY(100%);
   }
 }
 </style>

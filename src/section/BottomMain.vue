@@ -4,7 +4,9 @@
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-8 text-center why">
-            <h2 class="title text-start">Ottieni Visibilità</h2>
+            <h2 class="title">
+              <span id="create2">Ottieni Visibilità</span>
+            </h2>
             <p class="pt-4">
               Qualsiasi sia la tua attività, che si tratti di un bar, un
               ristorante o un'azienda, è importante avere una presenza ben
@@ -35,46 +37,19 @@ export default {
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
 
-    if (window.innerWidth > 576) {
-      gsap.to(".title", {
-        scrollTrigger: {
-          trigger: ".title",
-          start: "top center",
-          end: "top center",
-          once: true,
-          scrub: 1,
-        },
-        x: 100,
-        ease: "none",
-        duration: 1,
-      });
-    } else if (window.innerWidth > 1000) {
-      gsap.to(".title", {
-        scrollTrigger: {
-          trigger: ".title",
-          start: "top center",
-          end: "top center",
-          once: true,
-          scrub: 1,
-        },
-        x: 280,
-        ease: "none",
-        duration: 1,
-      });
-    } else {
-      gsap.to(".title", {
-        scrollTrigger: {
-          trigger: ".title",
-          start: "top center",
-          end: "top center",
-          once: true,
-          scrub: 1,
-        },
-        x: 40,
-        ease: "none",
-        duration: 1,
-      });
-    }
+    let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
+    tl.to("#create2", {
+      scrollTrigger: {
+        trigger: ".title",
+        start: "top center",
+        end: "top center",
+        once: true,
+        scrub: 1,
+      },
+      y: "0%",
+      duration: 0.7,
+      stagger: 0.2,
+    });
   },
 };
 </script>
@@ -90,6 +65,13 @@ export default {
   h2 {
     font-family: "Playfair Display", serif;
     font-size: 2.4rem;
+    background-color: inherit;
+    overflow: hidden;
+  }
+
+  h2 span {
+    display: inline-block;
+    transform: translateY(100%);
   }
 }
 </style>
