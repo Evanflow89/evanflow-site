@@ -35,7 +35,20 @@ export default {
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
 
-    if (window.innerWidth > 1000) {
+    if (window.innerWidth > 576) {
+      gsap.to(".title", {
+        scrollTrigger: {
+          trigger: ".title",
+          start: "top center",
+          end: "top center",
+          once: true,
+          scrub: 1,
+        },
+        x: 100,
+        ease: "none",
+        duration: 1,
+      });
+    } else if (window.innerWidth > 1000) {
       gsap.to(".title", {
         scrollTrigger: {
           trigger: ".title",
