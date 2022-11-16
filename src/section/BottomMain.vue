@@ -1,6 +1,6 @@
 <template>
   <section id="Noi">
-    <section class="BottomMain">
+    <section class="BottomMain d-flex align-items-center">
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-8 text-center why">
@@ -20,8 +20,6 @@
 </template>
 
 <script>
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BottomMain2 from "../common/BottomMain2.vue";
 import ContactUs from "../common/ContactUs.vue";
 
@@ -30,37 +28,6 @@ export default {
   components: {
     BottomMain2,
     ContactUs,
-  },
-  mounted() {
-    gsap.registerPlugin(ScrollTrigger);
-
-    if (window.innerWidth > 576) {
-      gsap.to(".why", {
-        scrollTrigger: {
-          trigger: ".why",
-          start: "top 100px",
-          end: "top 100px",
-          once: true,
-          scrub: 1,
-        },
-        y: 200,
-        ease: "none",
-        duration: 1,
-      });
-    } else {
-      gsap.to(".why", {
-        scrollTrigger: {
-          trigger: ".why",
-          start: "top 100px",
-          end: "top 100px",
-          once: true,
-          scrub: 1,
-        },
-        y: 40,
-        ease: "none",
-        duration: 1,
-      });
-    }
   },
 };
 </script>
@@ -76,10 +43,6 @@ export default {
   h2 {
     font-family: "Playfair Display", serif;
     font-size: 2.4rem;
-  }
-
-  .why2 {
-    margin-top: 100px;
   }
 }
 </style>
