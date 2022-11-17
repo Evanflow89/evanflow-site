@@ -56,10 +56,10 @@ export default {
   background-image: url("../assets/img/contactback.jpg");
   background-size: cover;
   color: white;
-  font-size: 2rem;
+  font-size: 1.7rem;
   h2 {
     font-family: "Playfair Display", serif;
-    font-size: 2.4rem;
+    font-size: 1.7rem;
     background-color: inherit;
     overflow: hidden;
     text-transform: uppercase;

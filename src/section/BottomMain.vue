@@ -62,7 +62,7 @@ export default {
   background-image: url("../assets/img/sfondoNoi.jpg");
   background-size: cover;
   color: white;
-  font-size: 2rem;
+  font-size: 1.7rem;
 
   .container {
     background-color: rgba($color: #000000, $alpha: 0.2);
@@ -71,7 +71,7 @@ export default {
   }
   h2 {
     font-family: "Playfair Display", serif;
-    font-size: 2.4rem;
+    font-size: 1.7rem;
     background-color: inherit;
     overflow: hidden;
     text-transform: uppercase;
