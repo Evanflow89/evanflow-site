@@ -28,8 +28,8 @@ export default {
     tl.to("#create", {
       scrollTrigger: {
         trigger: ".title2",
-        start: "top center",
-        end: "top center",
+        start: "center center",
+        end: "center center",
         scrub: 1,
       },
       y: "0%",

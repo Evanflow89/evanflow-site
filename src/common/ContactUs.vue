@@ -35,8 +35,8 @@ export default {
     tl.to("#create3", {
       scrollTrigger: {
         trigger: ".title3",
-        start: "top center",
-        end: "top center",
+        start: "center center",
+        end: "center center",
         scrub: 1,
       },
       y: "0%",
