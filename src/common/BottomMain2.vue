@@ -35,7 +35,7 @@ export default {
       y: "0%",
       duration: 0.7,
       stagger: 0.5,
-      delay: 0.2,
+      delay: 5,
     });
   },
 };
