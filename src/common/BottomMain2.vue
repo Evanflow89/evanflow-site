@@ -30,7 +30,6 @@ export default {
         trigger: ".title2",
         start: "top center",
         end: "top center",
-        once: true,
         scrub: 1,
       },
       y: "0%",

@@ -69,6 +69,7 @@ export default {
       ScrollTrigger.create({
         trigger: bg,
         start: "top top",
+        end: "+=300px",
         pin: true,
         pinSpacing: false,
       });
