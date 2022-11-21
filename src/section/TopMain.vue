@@ -71,13 +71,14 @@ export default {
 section {
   font-family: "Playfair Display", serif;
   position: relative;
-  height: 30rem;
+  height: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
 
   .one {
-    background-color: black;
+    background-image: url("../assets/img/backgroundred.jpg");
+    background-size: cover;
   }
 }
 .bg {
@@ -93,7 +94,7 @@ section {
 }
 
 h1 {
-  color: white;
+  color: var(--main1);
   text-shadow: 1px 1px 3px black;
   z-index: 1;
   font-size: 3em;

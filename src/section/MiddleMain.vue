@@ -1,16 +1,11 @@
 <template>
   <section>
-    <div class="container pt-5 pb-5">
+    <div class="container_custom pt-5 pb-5">
       <div class="row d-flex align-items-center justify-content-center">
-        <div class="col-12 col-md-5 pt-5">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            omnis alias doloremque impedit labore placeat debitis culpa dolorum
-            quas? At ratione eveniet laboriosam. Delectus numquam fuga, magnam
-            in impedit dolorum.
-          </p>
+        <div class="col-12 col-md-4 pt-5 text-center">
+          <h2>Crea il tuo sito</h2>
         </div>
-        <div class="col-12 col-md-5 pt-5">
+        <div class="col-12 col-md-6 pt-5">
           <img
             class="img-fluid teamImage"
             src="../assets/img/section1.jpg"
@@ -23,7 +18,7 @@
       <div class="row d-flex align-items-center justify-content-center pt-5">
         <div
           class="
-            col-12 col-md-5
+            col-12 col-md-6
             pt-5
             d-flex
             justify-content-center
@@ -31,12 +26,18 @@
           "
         >
           <img
-            class="teamImage"
+            class="teamImage img-fluid"
             src="../assets/img/section2.jpg"
-            alt="persone al pc"
+            alt="ricerca google"
           />
         </div>
-        <div class="col-12 col-md-5 pt-5 order-6 order-md-1">
+        <div class="col-12 col-md-4 pt-5 order-6 order-md-1 text-center">
+          <h2>Fatti trovare</h2>
+        </div>
+      </div>
+      <!-- ################ TERZA PARTE ################ -->
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-12 col-md-10 pt-5">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             omnis alias doloremque impedit labore placeat debitis culpa dolorum
@@ -56,10 +57,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.teamImage {
-  border-radius: 15px;
-  overflow: hidden;
-  max-height: 25rem;
-  height: 100%;
+section {
+  background-color: white;
+  color: var(--text);
+}
+
+.container_custom {
+  width: 100vw;
 }
 </style>
