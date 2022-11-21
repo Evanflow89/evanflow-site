@@ -8,14 +8,6 @@
         <span class="cursor">_</span>
       </h1>
     </section>
-    <section>
-      <div class="bg two"></div>
-      <h1>un sito personalizzato</h1>
-    </section>
-    <section>
-      <div class="bg three"></div>
-      <h1>non ti serve veramente...</h1>
-    </section>
   </div>
 </template>
 
@@ -86,12 +78,6 @@ section {
 
   .one {
     background-color: black;
-  }
-  .two {
-    background-image: url("../assets/img/sfondo2.jpg");
-  }
-  .three {
-    background-image: url("../assets/img/sfondo3.jpg");
   }
 }
 .bg {
