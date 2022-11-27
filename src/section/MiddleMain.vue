@@ -62,6 +62,24 @@ section {
   color: var(--text);
 }
 
+h2 {
+  text-transform: uppercase;
+  color: var(--textgray);
+  font-size: 5rem;
+  position: relative;
+}
+
+h2::after {
+  content: "CREA IL TUO SITO";
+  color: var(--text);
+  position: absolute;
+  left: 0;
+  top: 60px;
+  bottom: 0;
+  right: 0;
+  font-size: 3rem;
+}
+
 .container_custom {
   width: 100vw;
 }
