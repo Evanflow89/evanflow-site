@@ -77,8 +77,7 @@ section {
   justify-content: center;
 
   .one {
-    background-image: url("../assets/img/backgroundred.jpg");
-    background-size: cover;
+    background-color: var(--text);
   }
 }
 .bg {
@@ -94,22 +93,31 @@ section {
 }
 
 h1 {
-  color: var(--main1);
+  color: var(--back);
   text-shadow: 1px 1px 3px black;
   z-index: 1;
   font-size: 3em;
   font-weight: 400;
   overflow: hidden;
   position: relative;
+  text-transform: uppercase;
+  font-size: 800;
 }
 
 h1 .hi {
   display: inline-block;
 }
 
-h1 .text {
+.text {
   font-family: "Source Code Pro", sans-serif;
   font-weight: normal;
   margin-left: 1.2vw;
+  color: var(--textblue);
+  text-transform: uppercase;
+  font-size: 800;
+}
+
+.cursor {
+  color: var(--textblue);
 }
 </style>
